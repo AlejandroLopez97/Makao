@@ -37,23 +37,23 @@ namespace MakaoCasino.Data
         //Habilitar la carga perezosa para las propiedades virtuales
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseLazyLoadingProxies();
+            //optionsBuilder.UseLazyLoadingProxies();
             //base.OnConfiguring(optionsBuilder);
         }
 
         //Se sobreescribe onModelCreating para configurar las relaciones con fluent API
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);
+        //protected override void OnModelCreating(ModelBuilder builder)
+        //{
+        //    base.OnModelCreating(builder);
 
-            //Configuracion de llaves compuestas
-            builder.Entity<Cliente>()
-                .Haskey(x => new {x.Id, x.PersonaId});
+        //    //Configuracion de llaves compuestas
+        //    builder.Entity<Cliente>()
+        //        .Haskey(x => new {x.Id, x.PersonaId});
 
-            builder.Entity<Empleado>()
-                .HasKey(x => new {x.Id, x.PersonaId});
+        //    builder.Entity<Empleado>()
+        //        .HasKey(x => new {x.Id, x.PersonaId});
 
-        }
+        //}
 
 
     }

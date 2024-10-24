@@ -1,4 +1,5 @@
-﻿namespace MakaoCasino.Entidades
+﻿using System.ComponentModel.DataAnnotations.Schema;
+namespace MakaoCasino.Entidades
 {
     public class Cliente
     {
