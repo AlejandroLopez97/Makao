@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-MakaoCasino-b261377e-a4e9-402f-a8a4-c0da75de457f</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.3.3" />
+    <PackageReference Include="jQuery" Version="3.7.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\Administrativo\Controllers\" />
+    <Folder Include="Areas\Administrativo\Data\" />
+    <Folder Include="Areas\Administrativo\Models\" />
+    <Folder Include="Areas\Administrativo\Views\" />
+    <Folder Include="Areas\General\Controllers\" />
+    <Folder Include="Areas\General\Data\" />
+    <Folder Include="Areas\General\Models\" />
+    <Folder Include="Areas\General\Views\" />
+    <Folder Include="Areas\Juegos\Controllers\" />
+    <Folder Include="Areas\Juegos\Data\" />
+    <Folder Include="Areas\Juegos\Models\" />
+    <Folder Include="Areas\Juegos\Views\" />
+    <Folder Include="Enumeraciones\" />
+    <Folder Include="Source\" />
+  </ItemGroup>
+</Project>
